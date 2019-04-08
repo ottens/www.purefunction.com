@@ -79,17 +79,19 @@ const bgr2 = (localInputState, localTheme) =>
 
 const other = 'yellow';
 const DivWrap = styled.div`
-  display: flex;
-  align-items: stretch;
+  /* display: flex; */
+  /* align-items: stretch; */
 `;
 const Div1 = styled.div`
-  flex-grow: 1;
-  min-width: 15%;
+  /* flex-grow: 1; */
+  min-width: 5%;
   background-color: ${props => bgr2(props.colorBG, theme)};
 `;
 const Div2 = styled.div`
-  flex-grow: 2;
+  /* flex-grow: 2; */
   max-width: 600px;
+  margin: 0 auto;
+  padding: 0 7%;
 `;
 const Pcenter = styled.div`
   text-align: center;
@@ -110,7 +112,7 @@ class Index extends React.Component {
           <SEO />
           <h1>(Pf) => Pure Function LLC</h1>
           <DivWrap>
-            <Div1 colorBG="NOdNE" theme={theme} />
+            {/* <Div1 colorBG="NOdNE" theme={theme} /> */}
             <Div2>
               <Pcenter>_|_</Pcenter>
               <p>Pure Function focuses on developing state of the art, user driven, web applications.</p>
@@ -125,11 +127,11 @@ class Index extends React.Component {
               <p>
                 Contact us at 
                 {' '}
-                <a href="mailto:info@purefunction.com">maarten.ottens@purefunction.com</a>
+                <a href="mailto:info@purefunction.com">info@purefunction.com</a>
               </p>
               <Pcenter />
             </Div2>
-            <Div1 colorBG="jn" />
+            {/* <Div1 colorBG="jn" /> */}
           </DivWrap>
           {/* <PostListing postEdges={postEdges} /> */}
         </div>
